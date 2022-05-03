@@ -56,9 +56,13 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\02_Scripts\PositionScroller.cs" />
+    <Compile Include="Assets\02_Scripts\CoroutineTest.cs" />
+    <Compile Include="Assets\02_Scripts\Coroutine.cs" />
     <Compile Include="Assets\02_Scripts\Movement.cs" />
     <Compile Include="Assets\02_Scripts\PlayerController.cs" />
-    <Compile Include="Assets\02_Scripts\PositionScroller.cs" />
+    <Compile Include="Assets\02_Scripts\Weapon.cs" />
+    <Compile Include="Assets\02_Scripts\StageData.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
