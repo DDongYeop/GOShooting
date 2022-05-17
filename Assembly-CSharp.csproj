@@ -58,11 +58,13 @@
   <ItemGroup>
     <Compile Include="Assets\02_Scripts\PositionScroller.cs" />
     <Compile Include="Assets\02_Scripts\CoroutineTest.cs" />
+    <Compile Include="Assets\02_Scripts\Weapon.cs" />
+    <Compile Include="Assets\02_Scripts\StageData.cs" />
     <Compile Include="Assets\02_Scripts\Coroutine.cs" />
     <Compile Include="Assets\02_Scripts\Movement.cs" />
     <Compile Include="Assets\02_Scripts\PlayerController.cs" />
-    <Compile Include="Assets\02_Scripts\Weapon.cs" />
-    <Compile Include="Assets\02_Scripts\StageData.cs" />
+    <Compile Include="Assets\Test.cs" />
+    <Compile Include="Assets\02_Scripts\EnemySpwaner.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
