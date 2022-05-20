@@ -64,10 +64,14 @@
     <Compile Include="Assets\02_Scripts\Coroutine.cs" />
     <Compile Include="Assets\02_Scripts\Movement.cs" />
     <Compile Include="Assets\Test.cs" />
-    <Compile Include="Assets\02_Scripts\PlayerController.cs" />
     <Compile Include="Assets\02_Scripts\Twinkle.cs" />
-    <Compile Include="Assets\02_Scripts\MeteoriteSpawer.cs" />
     <Compile Include="Assets\02_Scripts\PositionAutoDestroy.cs" />
+    <Compile Include="Assets\02_Scripts\PlayerController.cs" />
+    <Compile Include="Assets\02_Scripts\MeteoriteSpawer.cs" />
+    <Compile Include="Assets\02_Scripts\Enemy.cs" />
+    <Compile Include="Assets\02_Scripts\Meteorite.cs" />
+    <Compile Include="Assets\02_Scripts\Projectile.cs" />
+    <Compile Include="Assets\02_Scripts\PlayerHP.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">

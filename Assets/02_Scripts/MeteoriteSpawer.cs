@@ -15,7 +15,7 @@ public class MeteoriteSpawer : MonoBehaviour
         StartCoroutine("SpawnMeteorite");
     }
 
-    IEnumerable SpawnMeteorite()
+    IEnumerator SpawnMeteorite()
     {
         while (true)
         {
@@ -32,10 +32,5 @@ public class MeteoriteSpawer : MonoBehaviour
 
             yield return new WaitForSeconds(spawnTime);
         }
-    }
-
-    void Update()
-    {
-        
     }
 }
