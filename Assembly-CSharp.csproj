@@ -56,22 +56,23 @@
     <Analyzer Include="C:\Program Files\Microsoft Visual Studio\2022\Community\Common7\IDE\Extensions\Microsoft\Visual Studio Tools for Unity\Analyzers\Microsoft.Unity.Analyzers.dll" />
   </ItemGroup>
   <ItemGroup>
+    <Compile Include="Assets\02_Scripts\Meteorite.cs" />
     <Compile Include="Assets\02_Scripts\EnemySpwaner.cs" />
     <Compile Include="Assets\02_Scripts\PositionScroller.cs" />
+    <Compile Include="Assets\02_Scripts\Projectile.cs" />
     <Compile Include="Assets\02_Scripts\CoroutineTest.cs" />
+    <Compile Include="Assets\02_Scripts\Enemy.cs" />
     <Compile Include="Assets\02_Scripts\Weapon.cs" />
     <Compile Include="Assets\02_Scripts\StageData.cs" />
     <Compile Include="Assets\02_Scripts\Coroutine.cs" />
     <Compile Include="Assets\02_Scripts\Movement.cs" />
     <Compile Include="Assets\Test.cs" />
     <Compile Include="Assets\02_Scripts\Twinkle.cs" />
+    <Compile Include="Assets\02_Scripts\PlayerHP.cs" />
     <Compile Include="Assets\02_Scripts\PositionAutoDestroy.cs" />
     <Compile Include="Assets\02_Scripts\PlayerController.cs" />
     <Compile Include="Assets\02_Scripts\MeteoriteSpawer.cs" />
-    <Compile Include="Assets\02_Scripts\Enemy.cs" />
-    <Compile Include="Assets\02_Scripts\Meteorite.cs" />
-    <Compile Include="Assets\02_Scripts\Projectile.cs" />
-    <Compile Include="Assets\02_Scripts\PlayerHP.cs" />
+    <Compile Include="Assets\02_Scripts\PlayerHPViewer.cs" />
   </ItemGroup>
   <ItemGroup>
     <Reference Include="UnityEngine">
