@@ -12,6 +12,26 @@ public class PlayerController : MonoBehaviour
     Movement movement;
     Weapon weapon;
 
+    int score;
+    public int Score
+    {
+        set => score = Mathf.Max(0, value);
+        get => score;
+    }
+    /*{
+        set
+        {
+            *//*if (value < 0) score = 0;
+            else score = value;*//*
+            score = Mathf.Max(0, value);
+        }
+
+        get
+        {
+            return score;
+        }
+    }*/
+
     void Awake()
     {
         movement = GetComponent<Movement>();
@@ -21,8 +41,8 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        float x = Input.GetAxis("Horizontal");
-        float y = Input.GetAxis("Vertical");
+        float x = Input.GetAxisRaw("Horizontal");
+        float y = Input.GetAxisRaw("Vertical");
 
         movement.MoveTo(new Vector3(x, y, 0));
 
