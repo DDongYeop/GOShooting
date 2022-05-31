@@ -66,15 +66,16 @@
     <Compile Include="Assets\02_Scripts\StageData.cs" />
     <Compile Include="Assets\02_Scripts\Coroutine.cs" />
     <Compile Include="Assets\02_Scripts\Movement.cs" />
+    <Compile Include="Assets\02_Scripts\ButtonEvent.cs" />
     <Compile Include="Assets\02_Scripts\PlayerHPViewer.cs" />
     <Compile Include="Assets\Test.cs" />
+    <Compile Include="Assets\02_Scripts\PlayerScoreViewer.cs" />
     <Compile Include="Assets\02_Scripts\Twinkle.cs" />
     <Compile Include="Assets\02_Scripts\PlayerHP.cs" />
     <Compile Include="Assets\02_Scripts\PositionAutoDestroy.cs" />
     <Compile Include="Assets\02_Scripts\PlayerController.cs" />
     <Compile Include="Assets\02_Scripts\MeteoriteSpawer.cs" />
-    <Compile Include="Assets\02_Scripts\PlayerScoreViewer.cs" />
-    <Compile Include="Assets\02_Scripts\ButtonEvent.cs" />
+    <Compile Include="Assets\02_Scripts\ResultScoreViewer.cs" />
   </ItemGroup>
   <ItemGroup>
     <None Include="Assets\TextMesh Pro\Shaders\TMPro.cginc" />
