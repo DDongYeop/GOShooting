@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour
         isDie = true;
     }
 
-    public void OndieEvent()
+    public void OnDieEvent()
     {
         PlayerPrefs.SetInt("Score", score);
         SceneManager.LoadScene("GameOver");

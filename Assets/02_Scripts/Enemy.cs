@@ -6,6 +6,7 @@ public class Enemy : MonoBehaviour
 {
     [SerializeField] float damage = 1;
     [SerializeField] int scorePoint = 100;
+    [SerializeField] GameObject explpsonPrefab;
     PlayerController playerController;
 
     private void Awake()
@@ -18,7 +19,7 @@ public class Enemy : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        if(collision.CompareTag("Player"))
+        if (collision.CompareTag("Player"))
         {
             collision.GetComponent<PlayerHP>().TakeDamge(damage);
             Destroy(gameObject);
@@ -29,6 +30,8 @@ public class Enemy : MonoBehaviour
     public void Die()
     {
         playerController.Score += scorePoint;
+        GameObject clone = Instantiate(explpsonPrefab, transform.position, Quaternion.identity);
         Destroy(gameObject);
+        Destroy(clone.gameObject, 1f);
     }
 }
