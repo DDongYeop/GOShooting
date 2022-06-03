@@ -426,6 +426,7 @@ GameObject:
   - component: {fileID: 585403589}
   - component: {fileID: 585403590}
   - component: {fileID: 585403586}
+  - component: {fileID: 585403591}
   m_Layer: 0
   m_Name: Player
   m_TagString: Player
@@ -609,6 +610,20 @@ CircleCollider2D:
   m_Offset: {x: 0, y: 0}
   serializedVersion: 2
   m_Radius: 0.5
+--- !u!114 &585403591
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 585403581}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a95ef45bc8a9e6846a7caf160e6f91d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 3535866113763022217, guid: 225d7852057fcc9499cee96cbec2342f, type: 3}
+  poolSize: 10
 --- !u!1 &797012004
 GameObject:
   m_ObjectHideFlags: 0
@@ -1169,6 +1184,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1306438195}
   - component: {fileID: 1306438196}
+  - component: {fileID: 1306438197}
   m_Layer: 0
   m_Name: EnemySpwaner
   m_TagString: Untagged
@@ -1205,6 +1221,20 @@ MonoBehaviour:
   stageData: {fileID: 11400000, guid: 1e18787b6c0c6a343ad158fcc43b2862, type: 2}
   enemyPrefab: {fileID: 8634945550145708228, guid: ef03dd35e0ded91488f54aa5e9bdd6cd, type: 3}
   spawnTime: 0.7
+--- !u!114 &1306438197
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1306438194}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: a95ef45bc8a9e6846a7caf160e6f91d1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  prefab: {fileID: 8634945550145708228, guid: ef03dd35e0ded91488f54aa5e9bdd6cd, type: 3}
+  poolSize: 10
 --- !u!1 &1776026026
 GameObject:
   m_ObjectHideFlags: 0

@@ -6,6 +6,15 @@ public class PositionAutoDestroy : MonoBehaviour
 {
     [SerializeField] StageData stageData;
     float destroyWeight = 2f;
+    ObjectPooler bulletPooler;
+    ObjectPooler enemyPooler;
+     
+    private void Start()
+    {
+        bulletPooler = GameObject.FindGameObjectWithTag("Player").GetComponent<ObjectPooler>();
+        enemyPooler = GameObject.Find("EnemySpwaner").GetComponent<ObjectPooler>();
+
+    }
 
     private void LateUpdate()
     {
@@ -13,6 +22,19 @@ public class PositionAutoDestroy : MonoBehaviour
            transform.position.x < stageData.LimitMin.x - destroyWeight ||
            transform.position.y > stageData.LimitMax.y + destroyWeight || 
            transform.position.y < stageData.LimitMin.y - destroyWeight )
-            Destroy(gameObject);
+        {
+            if(gameObject.tag == "Playerbullet")
+            {
+                bulletPooler.ReturnObject(gameObject);
+            }
+            else if(gameObject.tag == "Enemy")
+            {
+                enemyPooler.ReturnObject(gameObject);
+            }
+            else
+            {
+                Destroy(gameObject);
+            }
+        }
     }
 }

@@ -8,8 +8,10 @@ public class EnemySpwaner : MonoBehaviour
     [SerializeField] GameObject enemyPrefab;
     [SerializeField] float spawnTime = 0.7f;
 
+    ObjectPooler enemyPooler;
     void Start()
     {
+        enemyPooler = GetComponent<ObjectPooler>();
         StartCoroutine("SpawnEnemy");
     }
 
@@ -19,8 +21,9 @@ public class EnemySpwaner : MonoBehaviour
         {
             float positionX = Random.Range(stageData.LimitMin.x, stageData.LimitMax.x);
             Vector3 pos = new Vector3(positionX, stageData.LimitMax.y + 1f, 0);
-            Instantiate(enemyPrefab, pos, Quaternion.identity);
+            //Instantiate(enemyPrefab, pos, Quaternion.identity);
 
+            enemyPooler.SpawnObject(pos,Quaternion.identity);
             yield return new WaitForSeconds(spawnTime);
         }
     }
