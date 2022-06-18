@@ -5,12 +5,13 @@ using TMPro;
 
 public class ResultScoreViewer : MonoBehaviour
 {
-    TextMeshProUGUI textScore;
+    private TextMeshProUGUI textScore;
+    private int _score = 000;
 
     private void Start()
     {
         textScore = GetComponent<TextMeshProUGUI>();
-        int score = PlayerPrefs.GetInt("Score");
-        textScore.text = "Result Score " + score;
+        _score = PlayerPrefs.GetInt("Score");
+        textScore.text = "Result Score " + _score;
     }
 }
